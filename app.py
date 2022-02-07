@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "Welcome!"
+    return "Bem Vindo ao Docker Build!"
 
-@app.route('/how are you')
+@app.route('/comovai')
 def hello():
-    return 'I am good, how about you?'
+    return 'Muito Bem!'
 
 if __name__ == "__main__":
     app.run()
