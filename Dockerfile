@@ -1,9 +1,6 @@
-#FROM ubuntu:18.04
-FROM registry.redhat.io/ubi8/python-36
+FROM python:3.9-alpine3.17
 
-RUN pip3 install flask
-#RUN apt-get update && apt-get install -y python python-pip
-#RUN pip install flask 
+RUN pip install flask
 
 COPY app.py /opt/
 
